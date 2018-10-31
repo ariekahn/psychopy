@@ -45,6 +45,6 @@ from {pkgroot}.devices.computer import Computer
 
 try:
     from psychopy.contrib.lazy_import import lazy_import
-    lazy_import(globals(), lazyImports)
+    iohub_lazy_import(globals(), lazyImports)
 except Exception:
     exec(lazyImports)

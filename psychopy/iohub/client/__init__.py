@@ -21,7 +21,7 @@ try:
 except ImportError:
     psycho_logging = None
 from past.builtins import basestring
-from ..lazy_import import lazy_import
+from ..iohub_lazy_import import lazy_import
 from .. import _pkgroot, IOHUB_DIRECTORY
 from ..util import yload, yLoader
 from ..errors import print2err, ioHubError, printExceptionDetailsToStdErr
